@@ -399,6 +399,7 @@ a {
   font-weight: 600;
   line-height: 15px;
   margin-bottom: 40px;
+  text-align: justify;
 }
 
 /* buttom */
@@ -410,6 +411,12 @@ a {
   display: inline-block;
   padding: 14px 60px;
   position: relative;
+}
+.memo-hero__inner_btn-link:hover .memo-hero__inner_btn-frame--1 {
+  background: linear-gradient(90deg, rgb(0, 71, 255) 85%, rgb(0, 240, 255));
+}
+.memo-hero__inner_btn-link:hover .memo-hero__inner_btn-text {
+  color: rgb(255, 255, 255);
 }
 .memo-hero__inner_btn-frame--1, .memo-hero__inner_btn-frame--2 {
   border-radius: 5px;
@@ -489,6 +496,93 @@ a {
   width: 130px;
 }
 
+/* who-is-agent */
+.memo-agent-description {
+  position: relative;
+  padding: 65px 0px 60px;
+}
+.memo-agent-description::after {
+  background-image: url(../img/curves_decor-bottom_left.01e8179e8b4120c6.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: -21px;
+  content: "";
+  height: 125px;
+  left: 0px;
+  position: absolute;
+  width: 330px;
+  z-index: 0;
+  background-position: 50% center;
+}
+.memo-agent-description__decor--left {
+  background-image: url(../img/shine_decor_left.1158da4a56a7ed76.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 496px;
+  left: 0px;
+  position: absolute;
+  top: 35px;
+  transform: translateY(-42%);
+  width: 246px;
+  background-position: 0px center;
+}
+.memo-agent-description__decor--right {
+  background-image: url(../img/shine_decor_right.a21b873af1b4495f.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0px;
+  display: block;
+  height: 496px;
+  position: absolute;
+  right: 0px;
+  transform: translateY(42%);
+  width: 246px;
+  background-position: 50% center;
+}
+.memo-agent-description__decor--bg {
+  background-color: #020d26;
+  clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.memo-agent-description__inner {
+  position: relative;
+  z-index: 1;
+}
+.memo-agent-description__inner_title {
+  color: #fff;
+  font-family: Gilroy, sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.memo-agent-description__inner_description {
+  color: #3881da;
+  font-family: Gilroy, sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 19px;
+  margin-bottom: 32px;
+  text-align: justify;
+  
+}
+.memo-agent-description__inner_btn-wrap {
+  display: flex;
+  justify-content: center;
+}
+.memo-agent-description__inner_btn-link {
+  display: inline-block;
+  padding: 14px 60px;
+  position: relative;
+}
 
 
 
@@ -501,9 +595,28 @@ a {
 
 @media (min-width: 320px) {
   .memo-hero__inner.container {
-      max-width: 320px;
-      padding-left: 15px;
-      padding-right: 15px;
+    max-width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .memo-agent-description::before {
+    background-image: url(../img/curves_decor-top_right.49de094a03668e32.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    height: 125px;
+    position: absolute;
+    right: -10px;
+    top: 8px;
+    transform: rotate(-10deg);
+    width: 330px;
+    z-index: 0;
+    background-position: 50% center;
+  }
+  .container {
+    max-width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -512,6 +625,15 @@ a {
       max-width: 414px;
       padding-left: 20px;
       padding-right: 20px;
+  }
+  .memo-agent-description::before {
+    top: -3px;
+    transform: rotate(-7deg);
+  }
+  .container {
+    max-width: 414px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -554,6 +676,13 @@ a {
   .memo-hero__inner_btn-text {
     font-size: 1.375em;
   }
+
+  /* who-is-agent */
+  .memo-agent-description::before {
+    top: -7px;
+    transform: rotate(-6deg);
+  }
+
 }
 
 @media (min-width: 640px) {
@@ -594,6 +723,43 @@ a {
   }
   .memo-hero__inner_img--primary {
     background-position: 100% 100%;
+  }
+  .container {
+    max-width: 640px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .memo-agent-description__inner_title {
+    font-size: 2.25em;
+    line-height: 36px;
+  }
+  .memo-agent-description__inner_description {
+    font-size: 1.125em;
+    line-height: 22px;
+  }
+  
+}
+
+
+@media screen and (min-width: 590px) {
+  .memo-agent-description::before {
+      right: -5px;
+      top: -11px;
+      transform: rotate(-5deg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .memo-agent-description::before {
+      transform: rotate(-4deg);
+  }
+}
+
+
+@media screen and (min-width: 880px) {
+  .memo-agent-description::before {
+      top: -12px;
+      transform: rotate(-3deg);
   }
 }
 
@@ -657,47 +823,6 @@ a {
   button.navbar-toggler {
     color: #fff;
   }
-
-  /* hero */
-  /* .Tota #main {
-    padding-top: 0;
-  }
-  .hero {
-    background-image: none !important;
-  }
-
-  .hero .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .hero_left, 
-  .hero_right {
-    width: 100%;
-    max-width: 600px;
-  }
-  .hero .hero_left .hero_inner_title {
-    font-size: 2em;
-    line-height: 32px;
-  }
-  .hero .hero_left .hero_inner_description {
-    font-size: .9375em;
-    line-height: 15px;
-  }
-  .hero_inner_text {
-    padding-top: 0;
-  }
-  .hero_inner_btn-text {
-    font-size: 1.275em;
-  }
-  .hero_right {
-    background-image: url('../img/3.png');
-    background-size: cover; 
-    background-position: center; 
-    height: 350px; 
-  } */
 
 }
 
@@ -797,6 +922,31 @@ a {
     right: 120px;
     width: 170px;
   }
+
+
+  /* who-is-agent */
+  .memo-agent-description::before {
+    top: -13px;
+  }
+  .memo-agent-description__decor--left {
+    height: 936px;
+    top: 0px;
+    width: 577px;
+  }
+  .memo-agent-description__decor--right {
+    height: 846px;
+    width: 572px;
+  }
+  .container {
+    max-width: 1024px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .memo-agent-description__inner_description {
+    font-size: 1.375em;
+    line-height: 26px;
+    margin-bottom: 36px;
+  }
 }
 @media screen and (min-width: 1024px) and (orientation: landscape) {
   .memo-hero__inner_img, .memo-hero__inner_text {
@@ -847,5 +997,10 @@ a {
   }
   .memo-hero__inner_img--chips {
     right: 355px;
+  }
+  .container {
+    max-width: 1192px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
