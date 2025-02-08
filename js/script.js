@@ -22,3 +22,56 @@ window.addEventListener("scroll", function () {
     navbar.classList.remove("shadow-sm");
   }
 });
+
+
+
+
+const sliderTrack = document.querySelector('.slider-track');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+const sliderItems = document.querySelectorAll('.slider-item');
+        
+let currentIndex = 0;
+let autoPlayInterval;
+const mobileBreakpoint = 768;
+
+        function updateSlider() {
+            const slideWidth = sliderItems[0].clientWidth;
+            sliderTrack.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % sliderItems.length;
+            updateSlider();
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + sliderItems.length) % sliderItems.length;
+            updateSlider();
+        }
+
+        function checkViewport() {
+            if (window.innerWidth >= mobileBreakpoint) {
+                clearInterval(autoPlayInterval);
+                sliderTrack.style.transform = 'none';
+            } else {
+                startAutoPlay();
+            }
+        }
+
+        function startAutoPlay() {
+            autoPlayInterval = setInterval(nextSlide, 3000);
+        }
+
+        // Event Listeners
+        prevBtn.addEventListener('click', prevSlide);
+        nextBtn.addEventListener('click', nextSlide);
+        
+        window.addEventListener('resize', () => {
+            checkViewport();
+            updateSlider();
+        });
+
+        // Initial setup
+        checkViewport();
+        startAutoPlay();
