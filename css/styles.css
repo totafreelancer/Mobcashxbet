@@ -2,6 +2,10 @@ a {
   color: inherit;
   text-decoration: inherit;
 }
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
 .Tota {
   padding-top: 70px; /* Navbar এর উচ্চতা অনুযায়ী সামঞ্জস্য করো */
 }
@@ -584,6 +588,130 @@ a {
   position: relative;
 }
 
+/* HOW_TO_BECOME */
+.tota_HOW_TO_BECOME {
+  padding-top: 5rem;
+}
+.memo-how-to, .memo-how-to__inner {
+  position: relative;
+}
+.memo-how-to, .memo-how-to__inner {
+  position: relative;
+}
+.memo-how-to__inner_title {
+  color: #fff;
+  font-family: Gilroy, sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 30px;
+}
+.memo-how-to__inner_subtitle {
+  color: #fff;
+  font-family: Gilroy, sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+.memo-how-to__inner_subtitle-text span {
+  color: #14a0ff;
+}
+.memo-how-to__list, .memo-how-to__list-item {
+  display: flex;
+  flex-direction: column;
+}
+.memo-how-to__list-item {
+  margin-bottom: 48px;
+}
+.memo-how-to__list-item_num {
+  margin-bottom: 30px;
+  min-width: 130px;
+  position: relative;
+}
+.memo-how-to__list-item_num-inner {
+  align-items: center;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  margin-left: 10px;
+  position: relative;
+  width: 80px;
+}
+.memo-how-to__list-item_num-inner--frame-1, .memo-how-to__list-item_num-inner--frame-2 {
+  border-radius: 5px;
+  display: inline-block;
+  height: 100%;
+  position: absolute;
+  transform: skew(160deg);
+  transition: all .3s ease-in-out;
+  width: 100%;
+}
+.memo-how-to__list-item_num-inner--frame-1 {
+  background: #14a0ff;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.memo-how-to__list-item_num-inner--frame-text {
+  color: #002871;
+  font-family: Gilroy, sans-serif;
+  font-size: 2.25em;
+  font-weight: 700;
+  line-height: 36px;
+  position: relative;
+  text-transform: uppercase;
+  transition: color .3s linear;
+  z-index: 2;
+}
+.memo-how-to__list-item_num-inner--frame-2 {
+  background: linear-gradient(90deg, #0047ff, #28f0e4, #fff);
+  left: 10px;
+  padding: 2px;
+  top: 10px;
+  z-index: 0;
+}
+.memo-how-to__list-item_num-inner--frame-1, .memo-how-to__list-item_num-inner--frame-2 {
+  border-radius: 5px;
+  display: inline-block;
+  height: 100%;
+  position: absolute;
+  transform: skew(160deg);
+  transition: all .3s ease-in-out;
+  width: 100%;
+}
+.memo-how-to__list-item_num-inner--frame-2 span {
+  background: #000;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+.memo-how-to__list-item_num-inner {
+  align-items: center;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  margin-left: 10px;
+  position: relative;
+  width: 80px;
+}
+.memo-how-to__list-item_text--name {
+  color: #fff;
+  font-family: Gilroy, sans-serif;
+  font-size: 1.125em;
+  font-weight: 600;
+  line-height: 22px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.memo-how-to__list-item_text--description {
+  color: #3881da;
+  font-family: Gilroy, sans-serif;
+  font-size: .9375em;
+  font-weight: 600;
+  line-height: 15px;
+}
 
 
 
@@ -683,6 +811,14 @@ a {
     transform: rotate(-6deg);
   }
 
+  /* HOW_TO_BECOME */
+  .memo-how-to__list-item {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .memo-how-to__list-item_num {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: 640px) {
@@ -737,7 +873,17 @@ a {
     font-size: 1.125em;
     line-height: 22px;
   }
-  
+  /* HOW_TO_BECOME */
+  .memo-how-to__inner_title {
+    font-size: 2.875em;
+    line-height: 46px;
+    margin-bottom: 60px;
+  }
+  .memo-how-to__inner_subtitle {
+    font-size: 2.25em;
+    line-height: 36px;
+  }
+
 }
 
 
@@ -997,6 +1143,11 @@ a {
   }
   .memo-hero__inner_img--chips {
     right: 355px;
+  }
+  .container {
+    max-width: 1192px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .container {
     max-width: 1192px;
