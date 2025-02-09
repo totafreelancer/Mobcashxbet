@@ -714,6 +714,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* App Slider */
+.tota_memo_app_slider {
+  padding: 4rem 0 2rem 0;
+}
 .memo-app-slider {
   position: relative;
 }
@@ -883,6 +886,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Opportunities */
+.tota_opportunities {
+  padding: 4rem 0 2rem 0;
+}
 .memo-opportunities {
   position: relative;
 }
