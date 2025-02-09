@@ -951,8 +951,30 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 18px;
   text-align: center;
 }
-
-
+.memo-opportunities__list--nav-item.prev {
+  background-image: url(../svg/1.svg);
+  left: 20px;
+}
+.memo-opportunities__list--nav-item {
+  background-repeat: no-repeat;
+  background-size: 35px;
+  cursor: pointer;
+  display: block;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-75%);
+  width: 35px;
+  z-index: 15;
+  background-position: 0px center;
+}
+.memo-opportunities__list--nav-item.next {
+  background-image: url(../svg/2.svg);
+  right: 20px;
+}
+[type=button]:not(:disabled) {
+  display: none;
+}
 
 
 
@@ -1136,6 +1158,9 @@ h1, h2, h3, h4, h5, h6 {
     flex-basis: calc(50% - 10px);
   }
   .memo-app-slider--nav-item.prev {
+    left: 25px;
+  }
+  .memo-opportunities__list--nav-item.prev {
     left: 25px;
   }
 }
@@ -1383,6 +1408,10 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 0;
     min-height: auto;
   }
+  .memo-opportunities__list--nav {
+    display: none;
+  }
+
 }
 @media screen and (min-width: 1024px) and (orientation: landscape) {
   .memo-hero__inner_img, .memo-hero__inner_text {
