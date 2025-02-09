@@ -979,7 +979,134 @@ h1, h2, h3, h4, h5, h6 {
   right: 20px;
 }
 [type=button]:not(:disabled) {
+  display: none !important;
+}
+/*  */
+.elementor-widget-container {
+  transition: background .3s, border .3s, border-radius .3s, box-shadow .3s, transform var(--e-transform-transition-duration, .4s);
+}
+.memo-join {
+  padding-bottom: 20px;
+  position: relative;
+}
+.memo-join__decor--shine {
+  background-image: url(../img/join_shine.c4261f621b6bbf61.png);
+  height: 895px;
+  width: 1345px;
+}
+.memo-join__decor {
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-position: 50% center;
+}
+.memo-join__decor--stones {
+  background-image: url(../img/join_stones.89da3d58bb7e16a8.png);
+  height: 125px;
+  width: 450px;
+}
+.memo-join__inner {
+  position: relative;
+}
+.memo-join__inner_title {
+  color: rgb(255, 255, 255);
+  font-family: Gilroy, sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.memo-join__inner_title-text span {
+  color: rgb(20, 160, 255);
+}
+.memo-join__inner_decor--slogan {
+  background-image: url(../img/join_slogan.eff0e02a407ef53d.png);
+  bottom: 0px;
+  height: 80%;
+  width: 100%;
+}
+.memo-join__inner_decor--arrow-1, .memo-join__inner_decor--slogan {
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 0px;
+  position: absolute;
+  background-position: 50% center;
+}
+.memo-join__inner_decor--arrow-1 {
+  background-image: url(../img/app-arrow-right.c3e33f4ecd587682.png);
   display: none;
+  height: 35px;
+  top: 35%;
+  width: 80px;
+}
+.memo-join__inner_decor--arrow-2 {
+  background-image: url(../img/app-arrow-left.d7d4b79d900c99a4.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 25%;
+  display: none;
+  height: 35px;
+  position: absolute;
+  right: 0px;
+  width: 80px;
+  background-position: 50% center;
+}
+.memo-join__inner_decor--plus-1 {
+  background-image: url(../img/join-plus-1.7c416defce07dfee.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 15%;
+  height: 36px;
+  left: -70px;
+  position: absolute;
+  width: 150px;
+  background-position: 50% center;
+}
+.memo-join__inner_decor--plus-2 {
+  background-image: url(../img/join-plus-2.234cc371515c42ed.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 36px;
+  position: absolute;
+  right: -70px;
+  top: 35%;
+  width: 150px;
+  background-position: 50% center;
+}
+.memo-join__inner_decor--main {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.memo-join__inner_decor--main img {
+  margin-bottom: 40px;
+  width: 100%;
+}
+.elementor-widget-container img {
+  height: auto;
+  max-width: 100%;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+.memo-join__inner_btn-wrap {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.elementor-widget-container a {
+  box-shadow: none;
+  text-decoration: none;
+}
+.memo-join__inner_btn-link {
+  display: inline-block;
+  position: relative;
+  padding: 14px 60px;
 }
 
 
@@ -1090,6 +1217,21 @@ h1, h2, h3, h4, h5, h6 {
   .memo-how-to__list-item_num {
     margin-bottom: 0;
   }
+  .memo-join__inner_decor--arrow-1 {
+    display: block;
+  }
+  .memo-join__inner_decor--arrow-2 {
+    display: block;
+  }
+  .memo-join__inner_decor--plus-1 {
+    left: 0px;
+  }
+  .memo-join__inner_decor--plus-2 {
+    right: 0px;
+  }
+  .memo-join__inner_decor--main img {
+    max-width: 370px;
+  }
 }
 
 @media (min-width: 640px) {
@@ -1168,6 +1310,15 @@ h1, h2, h3, h4, h5, h6 {
   }
   .memo-opportunities__list--nav-item.prev {
     left: 25px;
+  }
+  .memo-join__decor--stones {
+    height: 165px;
+    width: 600px;
+  }
+  .memo-join__inner_title {
+    font-size: 2.875em;
+    line-height: 46px;
+    margin-bottom: 60px;
   }
 }
 
@@ -1416,6 +1567,21 @@ h1, h2, h3, h4, h5, h6 {
   }
   .memo-opportunities__list--nav {
     display: none;
+  }
+  .memo-join__decor--stones {
+    height: 275px;
+    width: 1000px;
+  }
+  .memo-join__inner_decor--arrow-1 {
+    height: 60px;
+    width: 137px;
+  }
+  .memo-join__inner_decor--arrow-2 {
+    height: 60px;
+    width: 137px;
+  }
+  .memo-join__inner_decor--main img {
+    max-width: 570px;
   }
 
 }
