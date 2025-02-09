@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
 window.addEventListener("scroll", function () {
   let navbar = document.querySelector(".navbar-custom");
   if (window.scrollY > 50) {
@@ -26,52 +27,76 @@ window.addEventListener("scroll", function () {
 
 
 
-const sliderTrack = document.querySelector('.slider-track');
-const prevBtn = document.querySelector('.prev-btn');
-const nextBtn = document.querySelector('.next-btn');
-const sliderItems = document.querySelectorAll('.slider-item');
-        
-let currentIndex = 0;
-let autoPlayInterval;
-const mobileBreakpoint = 768;
 
-        function updateSlider() {
-            const slideWidth = sliderItems[0].clientWidth;
-            sliderTrack.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+
+$(document).ready(function () {
+  var slider = $(".responsives");
+
+  // Initialize the Slick Slider
+  function initializeSlick() {
+    slider.slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: true,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: "unslick"
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
         }
+      ]
+    });
+  }
 
-        function nextSlide() {
-            currentIndex = (currentIndex + 1) % sliderItems.length;
-            updateSlider();
-        }
 
-        function prevSlide() {
-            currentIndex = (currentIndex - 1 + sliderItems.length) % sliderItems.length;
-            updateSlider();
-        }
+    // Custom navigation buttons
+    $(".memo-app-slider--nav-item.prev").click(function() {
+      slider.slick("slickPrev"); // Move to previous slide
+    });
+  
+    $(".memo-app-slider--nav-item.next").click(function() {
+      slider.slick("slickNext"); // Move to next slide
+    });
 
-        function checkViewport() {
-            if (window.innerWidth >= mobileBreakpoint) {
-                clearInterval(autoPlayInterval);
-                sliderTrack.style.transform = 'none';
-            } else {
-                startAutoPlay();
-            }
-        }
+  // Check for screen size on load and resize
+  function checkScreenSize() {
+    if ($(window).width() > 1024) {
+      if (slider.hasClass("slick-initialized")) {
+        // Uninitialize Slick (remove it completely)
+        slider.slick("unslick");
+        // Add any additional CSS changes here, if needed, for desktop
+        $(".memo-app-slider__inner_list-item").css("display", "block");
+      }
+    } else {
+      if (!slider.hasClass("slick-initialized")) {
+        // Initialize Slick again for mobile/tablet screens
+        initializeSlick();
+      }
+    }
+  }
 
-        function startAutoPlay() {
-            autoPlayInterval = setInterval(nextSlide, 3000);
-        }
+  // Initialize on page load
+  checkScreenSize();
 
-        // Event Listeners
-        prevBtn.addEventListener('click', prevSlide);
-        nextBtn.addEventListener('click', nextSlide);
-        
-        window.addEventListener('resize', () => {
-            checkViewport();
-            updateSlider();
-        });
-
-        // Initial setup
-        checkViewport();
-        startAutoPlay();
+  // Check on window resize
+  $(window).resize(function () {
+    checkScreenSize();
+  });
+});
