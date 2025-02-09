@@ -1,539 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>XBET - Bootstrap Header</title>
-    <!-- Bootstrap 5 CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <!-- Slick CSS (CDN - এটি রাখুন) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <div class="Tota">
-      <!-- header -->
-      <nav class="navbar navbar-expand-lg navbar-custom">
-        <div class="container d-flex flex-nowrap d-lg-flex">
-          <!-- Logo -->
-          <div class="nav_logo">
-            <div class="logo">
-              <a class="navbar-brand me-0" href="#">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="140"
-                  height="32"
-                  viewBox="0 0 140 32"
-                  fill="none"
-                >
-                  <path
-                    d="M77.0025 15.2267V15.15C78.9881 13.8867 80.1695 11.9367 80.7022 9.79333C81.9564 4.70667 78.8954 0.5 71.3769 0.5L55.0989 0.523333L49 25.3833L52.5375 31.5H64.1198C71.7144 31.5 77.585 27.9333 79.1039 21.7367C79.8683 18.5633 78.9881 16.3367 77.0025 15.2267ZM70.7316 21.5367C70.4271 22.8367 69.5535 24.1667 65.9465 24.1667H58.5537L59.8443 18.8333H67.1973C70.8077 18.8333 71.0724 20.2 70.7316 21.5367ZM72.2505 9.96C71.9858 10.9533 71.2247 12.1633 68.1107 12.1633H61.479L62.581 7.83H69.2127C72.363 7.83333 72.5152 8.85333 72.2505 9.96ZM86.2187 0.5H110.158L108.463 7.83333H93.8729L92.7345 12.1667H107.464L105.77 19.5H90.9476L89.8456 24.1667H107.513L105.73 31.5H78.6174L86.2187 0.5ZM140 0.5L138.177 7.83333H128.696L122.875 31.5H113.573L119.384 7.83333H110.528L112.222 0.5H140Z"
-                    fill="#14A0FF"
-                  />
-                  <path
-                    d="M50.9237 31.4967H43.1775C36.594 31.4967 34.9919 29.7904 33.9447 28.3974L30.724 22.8686L21.1345 31.5H8.37388H0.346848L4.4 14.997L5.34144 12.4976L2.86066 14.9337L0.10901 17.7531L0 9.49826L9.71171 0.506937H17.2763L10.1015 29.8804L17.3291 23.1085L35.9565 5.81242L35.9763 5.84574L41.5126 0.510269H55L40.5216 13.564L43.5111 18.6595L43.521 18.6529L50.9237 31.4967ZM34.9622 4.12279L34.9192 4.04948C32.7423 0.863523 29.3796 0.506937 27.6553 0.513603C27.1333 0.49694 26.803 0.500272 26.803 0.500272H17.6859L25.1183 13.2574L34.9622 4.12279Z"
-                    fill="white"
-                  />
-                </svg>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XBET - Bootstrap Header</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Slick CSS (CDN - এটি রাখুন) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+    integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+    integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <div class="Tota">
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container d-flex flex-nowrap d-lg-flex">
+        <!-- Logo -->
+        <div class="nav_logo">
+          <div class="logo">
+            <a class="navbar-brand me-0" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="140" height="32" viewBox="0 0 140 32" fill="none">
+                <path
+                  d="M77.0025 15.2267V15.15C78.9881 13.8867 80.1695 11.9367 80.7022 9.79333C81.9564 4.70667 78.8954 0.5 71.3769 0.5L55.0989 0.523333L49 25.3833L52.5375 31.5H64.1198C71.7144 31.5 77.585 27.9333 79.1039 21.7367C79.8683 18.5633 78.9881 16.3367 77.0025 15.2267ZM70.7316 21.5367C70.4271 22.8367 69.5535 24.1667 65.9465 24.1667H58.5537L59.8443 18.8333H67.1973C70.8077 18.8333 71.0724 20.2 70.7316 21.5367ZM72.2505 9.96C71.9858 10.9533 71.2247 12.1633 68.1107 12.1633H61.479L62.581 7.83H69.2127C72.363 7.83333 72.5152 8.85333 72.2505 9.96ZM86.2187 0.5H110.158L108.463 7.83333H93.8729L92.7345 12.1667H107.464L105.77 19.5H90.9476L89.8456 24.1667H107.513L105.73 31.5H78.6174L86.2187 0.5ZM140 0.5L138.177 7.83333H128.696L122.875 31.5H113.573L119.384 7.83333H110.528L112.222 0.5H140Z"
+                  fill="#14A0FF" />
+                <path
+                  d="M50.9237 31.4967H43.1775C36.594 31.4967 34.9919 29.7904 33.9447 28.3974L30.724 22.8686L21.1345 31.5H8.37388H0.346848L4.4 14.997L5.34144 12.4976L2.86066 14.9337L0.10901 17.7531L0 9.49826L9.71171 0.506937H17.2763L10.1015 29.8804L17.3291 23.1085L35.9565 5.81242L35.9763 5.84574L41.5126 0.510269H55L40.5216 13.564L43.5111 18.6595L43.521 18.6529L50.9237 31.4967ZM34.9622 4.12279L34.9192 4.04948C32.7423 0.863523 29.3796 0.506937 27.6553 0.513603C27.1333 0.49694 26.803 0.500272 26.803 0.500272H17.6859L25.1183 13.2574L34.9622 4.12279Z"
+                  fill="white" />
+              </svg>
+            </a>
+          </div>
+          <!-- Navigation -->
+          <div class="main_nav">
+            <ul class="navbar-nav me-auto flex-nowrap">
+              <li class="nav-item">
+                <a class="nav-link nav-link-custom" href="#who_is_agent">WHO IS AN AGENT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-custom" href="#HOW_TO_BECOME">HOW TO BECOME AN AGENT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-custom" href="#">OPPORTUNITIES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-custom" href="#">REVIEWS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-custom" href="#">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-custom" href="#">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-custom" href="#">CONTACTS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="collapse navbar-collapse d-flex justify-content-between text-center" id="navbarNav">
+          <div class="lang-switcher">
+            <div class="lang-switcher_current">
+              <span class="lang-name">EN</span>
+            </div>
+            <div class="lang-switcher_list">
+              <div class="lang-switcher_list-inner">
+                <div class="lang-switcher_item">
+                  <a class="lang-switcher_item_link" href="#">
+                    <span class="lang-switcher_item_lang-name"> FR </span>
+                  </a>
+                </div>
+                <div class="lang-switcher_item">
+                  <a class="lang-switcher_item_link" href="#">
+                    <span class="lang-switcher_item_lang-name"> AR </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="become_widget">
+            <div class="become_widget__btn position-relative">
+              <a href="#" class="become_widget__btn-link">
+                <span class="become_widget__btn-link--frame-2"><span></span></span>
+                <span class="become_widget__btn-text">TAKE AGENT</span>
               </a>
             </div>
-            <!-- Navigation -->
-            <div class="main_nav">
-              <ul class="navbar-nav me-auto flex-nowrap">
-                <li class="nav-item">
-                  <a class="nav-link nav-link-custom" href="#who_is_agent"
-                    >WHO IS AN AGENT</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-link-custom" href="#HOW_TO_BECOME"
-                    >HOW TO BECOME AN AGENT</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-link-custom" href="#">OPPORTUNITIES</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-link-custom" href="#">REVIEWS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-link-custom" href="#">ABOUT US</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-link-custom" href="#">FAQ</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-link-custom" href="#">CONTACTS</a>
-                </li>
-              </ul>
-            </div>
           </div>
 
-          <!-- Right Section -->
-          <div
-            class="collapse navbar-collapse d-flex justify-content-between text-center"
-            id="navbarNav"
-          >
-            <div class="lang-switcher">
-              <div class="lang-switcher_current">
-                <span class="lang-name">EN</span>
-              </div>
-              <div class="lang-switcher_list">
-                <div class="lang-switcher_list-inner">
-                  <div class="lang-switcher_item">
-                    <a class="lang-switcher_item_link" href="#">
-                      <span class="lang-switcher_item_lang-name"> FR </span>
+          <!-- Mobile Toggle -->
+          <button class="navbar-toggler" type="button" ata-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div id="main">
+      <!-- hero -->
+      <div class="hero text-center">
+        <div class="elementor-widget-container">
+          <section class="memo-hero memo-hero__lang-en">
+            <div class="memo-hero__decor memo-hero__decor_bg--1"></div>
+            <div class="memo-hero__decor memo-hero__decor_bg--2"></div>
+            <div class="memo-hero__decor memo-hero__decor_bg--3"></div>
+            <div class="memo-hero__decor memo-hero__decor_bg--4"></div>
+            <div class="memo-hero__decor memo-hero__decor_bg--5"></div>
+            <div class="memo-hero__decor memo-hero__decor_bg--6"></div>
+            <div class="memo-hero__decor memo-hero__decor_bg--7"></div>
+            <div class="memo-hero__decor memo-hero__decor_bg--8"></div>
+            <div class="memo-hero__decor memo-hero__decor_bg--9"></div>
+            <div class="memo-hero__inner container">
+              <div class="memo-hero__inner_decor--1"></div>
+              <div class="memo-hero__inner_decor--2"></div>
+              <div class="memo-hero__inner_decor--3"></div>
+              <div class="memo-hero__inner_decor--4"></div>
+              <div class="memo-hero__inner_decor--5"></div>
+              <div class="memo-hero__inner_decor--6"></div>
+              <div class="memo-hero__inner_decor--7"></div>
+              <div class="memo-hero__inner_text">
+                <h1 class="memo-hero__inner_title aos-init aos-animate" data-aos="fade-right" data-aos-delay="700"
+                  data-aos-anchor-placement="top-center" data-aos-offset="-200" data-aos-duration="800">
+                  <span class="memo-hero__inner_title-text">Download MobCash</span>
+                </h1>
+                <h2 class="memo-hero__inner_description aos-init aos-animate" data-aos="fade-right" data-aos-delay="800"
+                  data-aos-anchor-placement="top-center" data-aos-offset="-200" data-aos-duration="800">
+                  <span class="memo-hero__inner_description-text">Download Mobcash for 1xbet. MobCash is a Aplication
+                    for
+                    Deposit and Widthdraw. This is for only agents , if you
+                    are agent please download it from bellow button</span>
+                </h2>
+                <div class="memo-hero__inner_btn-wrap">
+                  <div class="memo-hero__inner_btn aos-init aos-animate" data-aos="fade-right" data-aos-delay="900"
+                    data-aos-anchor-placement="top-center" data-aos-offset="-200" data-aos-duration="800">
+                    <a href="#" class="memo-hero__inner_btn-link" download="">
+                      <span class="memo-hero__inner_btn-frame--1"></span>
+                      <span class="memo-hero__inner_btn-text">TAKE AGENT</span>
+                      <span class="memo-hero__inner_btn-frame--2"><span></span></span>
                     </a>
                   </div>
-                  <div class="lang-switcher_item">
-                    <a class="lang-switcher_item_link" href="#">
-                      <span class="lang-switcher_item_lang-name"> AR </span>
-                    </a>
-                  </div>
                 </div>
               </div>
-            </div>
-
-            <div class="become_widget">
-              <div class="become_widget__btn position-relative">
-                <a href="#" class="become_widget__btn-link">
-                  <span class="become_widget__btn-link--frame-2"
-                    ><span></span
-                  ></span>
-                  <span class="become_widget__btn-text">TAKE AGENT</span>
-                </a>
-              </div>
-            </div>
-
-            <!-- Mobile Toggle -->
-            <button
-              class="navbar-toggler"
-              type="button"
-              ata-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-            >
-              <span class="navbar-toggler-icon"
-                ><i class="fa-solid fa-bars"></i
-              ></span>
-            </button>
-          </div>
-        </div>
-      </nav>
-
-      <div id="main">
-        <!-- hero -->
-        <div class="hero text-center">
-          <div class="elementor-widget-container">
-            <section class="memo-hero memo-hero__lang-en">
-              <div class="memo-hero__decor memo-hero__decor_bg--1"></div>
-              <div class="memo-hero__decor memo-hero__decor_bg--2"></div>
-              <div class="memo-hero__decor memo-hero__decor_bg--3"></div>
-              <div class="memo-hero__decor memo-hero__decor_bg--4"></div>
-              <div class="memo-hero__decor memo-hero__decor_bg--5"></div>
-              <div class="memo-hero__decor memo-hero__decor_bg--6"></div>
-              <div class="memo-hero__decor memo-hero__decor_bg--7"></div>
-              <div class="memo-hero__decor memo-hero__decor_bg--8"></div>
-              <div class="memo-hero__decor memo-hero__decor_bg--9"></div>
-              <div class="memo-hero__inner container">
-                <div class="memo-hero__inner_decor--1"></div>
-                <div class="memo-hero__inner_decor--2"></div>
-                <div class="memo-hero__inner_decor--3"></div>
-                <div class="memo-hero__inner_decor--4"></div>
-                <div class="memo-hero__inner_decor--5"></div>
-                <div class="memo-hero__inner_decor--6"></div>
-                <div class="memo-hero__inner_decor--7"></div>
-                <div class="memo-hero__inner_text">
-                  <h1
-                    class="memo-hero__inner_title aos-init aos-animate"
-                    data-aos="fade-right"
-                    data-aos-delay="700"
-                    data-aos-anchor-placement="top-center"
-                    data-aos-offset="-200"
-                    data-aos-duration="800"
-                  >
-                    <span class="memo-hero__inner_title-text"
-                      >Download MobCash</span
-                    >
-                  </h1>
-                  <h2
-                    class="memo-hero__inner_description aos-init aos-animate"
-                    data-aos="fade-right"
-                    data-aos-delay="800"
-                    data-aos-anchor-placement="top-center"
-                    data-aos-offset="-200"
-                    data-aos-duration="800"
-                  >
-                    <span class="memo-hero__inner_description-text"
-                      >Download Mobcash for 1xbet. MobCash is a Aplication for
-                      Deposit and Widthdraw. This is for only agents , if you
-                      are agent please download it from bellow button</span
-                    >
-                  </h2>
-                  <div class="memo-hero__inner_btn-wrap">
-                    <div
-                      class="memo-hero__inner_btn aos-init aos-animate"
-                      data-aos="fade-right"
-                      data-aos-delay="900"
-                      data-aos-anchor-placement="top-center"
-                      data-aos-offset="-200"
-                      data-aos-duration="800"
-                    >
-                      <a href="#" class="memo-hero__inner_btn-link" download="">
-                        <span class="memo-hero__inner_btn-frame--1"></span>
-                        <span class="memo-hero__inner_btn-text"
-                          >TAKE AGENT</span
-                        >
-                        <span class="memo-hero__inner_btn-frame--2"
-                          ><span></span
-                        ></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="memo-hero__inner_img">
-                  <div
-                    class="memo-hero__inner_img--chips aos-init aos-animate"
-                    data-aos="fade"
-                    data-aos-delay="1000"
-                    data-aos-anchor-placement="top-center"
-                    data-aos-duration="800"
-                    data-aos-offset="-200"
-                  ></div>
-                  <div
-                    class="memo-hero__inner_img--primary aos-init aos-animate"
-                    data-aos="fade"
-                    data-aos-delay="400"
-                    data-aos-anchor-placement="top-center"
-                    data-aos-duration="800"
-                  ></div>
-                  <div
-                    class="memo-hero__inner_img--football aos-init aos-animate"
-                    data-aos="fade"
-                    data-aos-delay="1100"
-                    data-aos-anchor-placement="top-center"
-                    data-aos-duration="800"
-                    data-aos-offset="-200"
-                  ></div>
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
-
-        <!-- who-is-agent -->
-        <div class="tota_who_is_agent" id="who_is_agent">
-          <section
-            class="memo-agent-description memo-agent-description__lang-en"
-          >
-            <div class="memo-agent-description__decor--left"></div>
-            <div class="memo-agent-description__decor--right"></div>
-            <div class="memo-agent-description__decor--bg"></div>
-            <div class="memo-agent-description__inner container">
-              <h3
-                class="memo-agent-description__inner_title aos-init aos-animate"
-                data-aos="fade"
-                data-aos-delay="400"
-                data-aos-anchor-placement="top-center"
-                data-aos-offset="-400"
-                data-aos-duration="800"
-              >
-                <span class="memo-agent-description__inner_title-text"
-                  >Who is an agent</span
-                >
-              </h3>
-              <div
-                class="memo-agent-description__inner_description aos-init aos-animate"
-                data-aos="fade"
-                data-aos-delay="500"
-                data-aos-anchor-placement="top-center"
-                data-aos-offset="-400"
-                data-aos-duration="800"
-              >
-                Agent is an intermediary who makes money by helping players
-                deposit and withdraw money from their accounts. The modern
-                network marketing model allows an agent to earn money on the
-                commission that 1xBet pays them. Using a smartphone and a
-                special mobile app MobCash an agent can open his own mobile cash
-                register and receive a solid income by making money transfers.
-              </div>
-              <div
-                class="memo-agent-description__inner_btn-wrap aos-init aos-animate"
-                data-aos="fade-up"
-                data-aos-delay="600"
-                data-aos-anchor-placement="top-center"
-                data-aos-offset="-400"
-                data-aos-duration="800"
-              >
-                <a href="#contacts" class="memo-hero__inner_btn-link">
-                  <span class="memo-hero__inner_btn-frame--1"></span>
-                  <span class="memo-hero__inner_btn-text">Become an Agent</span>
-                  <span class="memo-hero__inner_btn-frame--2"
-                    ><span></span
-                  ></span>
-                </a>
+              <div class="memo-hero__inner_img">
+                <div class="memo-hero__inner_img--chips aos-init aos-animate" data-aos="fade" data-aos-delay="1000"
+                  data-aos-anchor-placement="top-center" data-aos-duration="800" data-aos-offset="-200"></div>
+                <div class="memo-hero__inner_img--primary aos-init aos-animate" data-aos="fade" data-aos-delay="400"
+                  data-aos-anchor-placement="top-center" data-aos-duration="800"></div>
+                <div class="memo-hero__inner_img--football aos-init aos-animate" data-aos="fade" data-aos-delay="1100"
+                  data-aos-anchor-placement="top-center" data-aos-duration="800" data-aos-offset="-200"></div>
               </div>
             </div>
           </section>
         </div>
+      </div>
 
-        <!-- HOW_TO_BECOME -->
-        <div class="tota_HOW_TO_BECOME" id="HOW_TO_BECOME">
-          <section class="memo-how-to memo-how-to__lang-en">
-            <div class="memo-how-to__inner container">
-              <h3
-                class="memo-how-to__inner_title aos-init aos-animate"
-                data-aos="fade"
-                data-aos-delay="400"
-                data-aos-anchor-placement="top-center"
-                data-aos-offset="-400"
-                data-aos-duration="800"
-              >
-                <span class="memo-how-to__inner_title-text"
-                  >How to become an agent</span
-                >
-              </h3>
-              <h4
-                class="memo-how-to__inner_subtitle aos-init aos-animate"
-                data-aos="fade"
-                data-aos-delay="500"
-                data-aos-anchor-placement="top-center"
-                data-aos-offset="-400"
-                data-aos-duration="800"
-              >
-                <span class="memo-how-to__inner_subtitle-text"
-                  >To become a 1xBet agent, it is enough to fulfill 3
-                  <span>conditions</span>:</span
-                >
-              </h4>
-              <div class="memo-how-to__list">
-                <div
-                  class="memo-how-to__list-item aos-init aos-animate"
-                  data-aos="fade-left"
-                  data-aos-delay="600"
-                  data-aos-anchor-placement="top-center"
-                  data-aos-offset="-400"
-                  data-aos-duration="800"
-                >
-                  <div class="memo-how-to__list-item_num">
-                    <div class="memo-how-to__list-item_num-inner">
-                      <span
-                        class="memo-how-to__list-item_num-inner--frame-1"
-                      ></span>
-                      <span class="memo-how-to__list-item_num-inner--frame-text"
-                        >1</span
-                      >
-                      <span class="memo-how-to__list-item_num-inner--frame-2"
-                        ><span></span
-                      ></span>
-                    </div>
-                  </div>
-                  <div class="memo-how-to__list-item_text">
-                    <div class="memo-how-to__list-item_text--name">
-                      Go through verification and receive agent status.
-                    </div>
-                    <div class="memo-how-to__list-item_text--description">
-                      Data verification will take very little time. Please note
-                      that 1xBet operates exclusively within the legal
-                      framework; therefore, only adults can become participants
-                      in the agent program.
-                    </div>
+      <!-- who-is-agent -->
+      <div class="tota_who_is_agent" id="who_is_agent">
+        <section class="memo-agent-description memo-agent-description__lang-en">
+          <div class="memo-agent-description__decor--left"></div>
+          <div class="memo-agent-description__decor--right"></div>
+          <div class="memo-agent-description__decor--bg"></div>
+          <div class="memo-agent-description__inner container">
+            <h3 class="memo-agent-description__inner_title aos-init aos-animate" data-aos="fade" data-aos-delay="400"
+              data-aos-anchor-placement="top-center" data-aos-offset="-400" data-aos-duration="800">
+              <span class="memo-agent-description__inner_title-text">Who is an agent</span>
+            </h3>
+            <div class="memo-agent-description__inner_description aos-init aos-animate" data-aos="fade"
+              data-aos-delay="500" data-aos-anchor-placement="top-center" data-aos-offset="-400"
+              data-aos-duration="800">
+              Agent is an intermediary who makes money by helping players
+              deposit and withdraw money from their accounts. The modern
+              network marketing model allows an agent to earn money on the
+              commission that 1xBet pays them. Using a smartphone and a
+              special mobile app MobCash an agent can open his own mobile cash
+              register and receive a solid income by making money transfers.
+            </div>
+            <div class="memo-agent-description__inner_btn-wrap aos-init aos-animate" data-aos="fade-up"
+              data-aos-delay="600" data-aos-anchor-placement="top-center" data-aos-offset="-400"
+              data-aos-duration="800">
+              <a href="#contacts" class="memo-hero__inner_btn-link">
+                <span class="memo-hero__inner_btn-frame--1"></span>
+                <span class="memo-hero__inner_btn-text">Become an Agent</span>
+                <span class="memo-hero__inner_btn-frame--2"><span></span></span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- HOW_TO_BECOME -->
+      <div class="tota_HOW_TO_BECOME" id="HOW_TO_BECOME">
+        <section class="memo-how-to memo-how-to__lang-en">
+          <div class="memo-how-to__inner container">
+            <h3 class="memo-how-to__inner_title aos-init aos-animate" data-aos="fade" data-aos-delay="400"
+              data-aos-anchor-placement="top-center" data-aos-offset="-400" data-aos-duration="800">
+              <span class="memo-how-to__inner_title-text">How to become an agent</span>
+            </h3>
+            <h4 class="memo-how-to__inner_subtitle aos-init aos-animate" data-aos="fade" data-aos-delay="500"
+              data-aos-anchor-placement="top-center" data-aos-offset="-400" data-aos-duration="800">
+              <span class="memo-how-to__inner_subtitle-text">To become a 1xBet agent, it is enough to fulfill 3
+                <span>conditions</span>:</span>
+            </h4>
+            <div class="memo-how-to__list">
+              <div class="memo-how-to__list-item aos-init aos-animate" data-aos="fade-left" data-aos-delay="600"
+                data-aos-anchor-placement="top-center" data-aos-offset="-400" data-aos-duration="800">
+                <div class="memo-how-to__list-item_num">
+                  <div class="memo-how-to__list-item_num-inner">
+                    <span class="memo-how-to__list-item_num-inner--frame-1"></span>
+                    <span class="memo-how-to__list-item_num-inner--frame-text">1</span>
+                    <span class="memo-how-to__list-item_num-inner--frame-2"><span></span></span>
                   </div>
                 </div>
-                <div
-                  class="memo-how-to__list-item aos-init aos-animate"
-                  data-aos="fade-left"
-                  data-aos-delay="700"
-                  data-aos-anchor-placement="top-center"
-                  data-aos-offset="-400"
-                  data-aos-duration="800"
-                >
-                  <div class="memo-how-to__list-item_num">
-                    <div class="memo-how-to__list-item_num-inner">
-                      <span
-                        class="memo-how-to__list-item_num-inner--frame-1"
-                      ></span>
-                      <span class="memo-how-to__list-item_num-inner--frame-text"
-                        >2</span
-                      >
-                      <span class="memo-how-to__list-item_num-inner--frame-2"
-                        ><span></span
-                      ></span>
-                    </div>
+                <div class="memo-how-to__list-item_text">
+                  <div class="memo-how-to__list-item_text--name">
+                    Go through verification and receive agent status.
                   </div>
-                  <div class="memo-how-to__list-item_text">
-                    <div class="memo-how-to__list-item_text--name">
-                      Log in to 1xBet and deposit to your account.
-                    </div>
-                    <div class="memo-how-to__list-item_text--description">
-                      The manager of the agent program will create a special
-                      agent account for you on 1xBet. By making a deposit for
-                      the minimum required amount of money, $100, you can
-                      replenish your account, starting your agent activity.
-                    </div>
+                  <div class="memo-how-to__list-item_text--description">
+                    Data verification will take very little time. Please note
+                    that 1xBet operates exclusively within the legal
+                    framework; therefore, only adults can become participants
+                    in the agent program.
                   </div>
                 </div>
-                <div
-                  class="memo-how-to__list-item aos-init aos-animate"
-                  data-aos="fade-left"
-                  data-aos-delay="800"
-                  data-aos-anchor-placement="top-center"
-                  data-aos-offset="-400"
-                  data-aos-duration="800"
-                >
-                  <div class="memo-how-to__list-item_num">
-                    <div class="memo-how-to__list-item_num-inner">
-                      <span
-                        class="memo-how-to__list-item_num-inner--frame-1"
-                      ></span>
-                      <span class="memo-how-to__list-item_num-inner--frame-text"
-                        >3</span
-                      >
-                      <span class="memo-how-to__list-item_num-inner--frame-2"
-                        ><span></span
-                      ></span>
-                    </div>
+              </div>
+              <div class="memo-how-to__list-item aos-init aos-animate" data-aos="fade-left" data-aos-delay="700"
+                data-aos-anchor-placement="top-center" data-aos-offset="-400" data-aos-duration="800">
+                <div class="memo-how-to__list-item_num">
+                  <div class="memo-how-to__list-item_num-inner">
+                    <span class="memo-how-to__list-item_num-inner--frame-1"></span>
+                    <span class="memo-how-to__list-item_num-inner--frame-text">2</span>
+                    <span class="memo-how-to__list-item_num-inner--frame-2"><span></span></span>
                   </div>
-                  <div class="memo-how-to__list-item_text">
-                    <div class="memo-how-to__list-item_text--name">
-                      Install the agent app.
-                    </div>
-                    <div class="memo-how-to__list-item_text--description">
-                      It will be available for smartphones based on Android 4.4+
-                      OS via the link the 1xBet agent program manager will send
-                      you.
-                    </div>
+                </div>
+                <div class="memo-how-to__list-item_text">
+                  <div class="memo-how-to__list-item_text--name">
+                    Log in to 1xBet and deposit to your account.
+                  </div>
+                  <div class="memo-how-to__list-item_text--description">
+                    The manager of the agent program will create a special
+                    agent account for you on 1xBet. By making a deposit for
+                    the minimum required amount of money, $100, you can
+                    replenish your account, starting your agent activity.
+                  </div>
+                </div>
+              </div>
+              <div class="memo-how-to__list-item aos-init aos-animate" data-aos="fade-left" data-aos-delay="800"
+                data-aos-anchor-placement="top-center" data-aos-offset="-400" data-aos-duration="800">
+                <div class="memo-how-to__list-item_num">
+                  <div class="memo-how-to__list-item_num-inner">
+                    <span class="memo-how-to__list-item_num-inner--frame-1"></span>
+                    <span class="memo-how-to__list-item_num-inner--frame-text">3</span>
+                    <span class="memo-how-to__list-item_num-inner--frame-2"><span></span></span>
+                  </div>
+                </div>
+                <div class="memo-how-to__list-item_text">
+                  <div class="memo-how-to__list-item_text--name">
+                    Install the agent app.
+                  </div>
+                  <div class="memo-how-to__list-item_text--description">
+                    It will be available for smartphones based on Android 4.4+
+                    OS via the link the 1xBet agent program manager will send
+                    you.
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
+      </div>
 
-        <!-- memo-app-slider -->
-        <div class="tota_memo_app_slider" id="tota_memo_app_slider"></div>
+      <!-- memo-app-slider -->
+      <div class="tota_memo_app_slider" id="tota_memo_app_slider">
         <section class="memo-app-slider memo-app-slider__lang-en">
           <div class="memo-app-slider__inner container">
             <div class="memo-app-slider__inner_title">
-              <h3
-                data-aos="fade"
-                data-aos-delay="400"
-                data-aos-anchor-placement="top-center"
-                data-aos-offset="-400"
-                data-aos-duration="800"
-                class="aos-init aos-animate"
-              >
+              <h3 data-aos="fade" data-aos-delay="400" data-aos-anchor-placement="top-center" data-aos-offset="-400"
+                data-aos-duration="800" class="aos-init aos-animate">
                 1xBet MobCash App
               </h3>
             </div>
             <div class="memo-app-slider__inner_list-wrap">
               <div class="memo-app-slider__decor"></div>
-              <div class="memo-app-slider__inner_list flex flex-wrap gap-1 justify-between flex-row slick-initialized slick-slider">
+              <div
+                class="memo-app-slider__inner_list flex flex-wrap gap-1 justify-between flex-row slick-initialized slick-slider">
                 <div class="slick-list draggable">
-                  <div
-                    class="slick-track responsives"
-                    style="
-                      opacity: 1;
-                      transform: translate3d(0px, 0px, 0px);
-                    "
-                  >
-                    <div class="slick-slide slick-current slick-active"data-slick-index="0" aria-hidden="false" style="width: 378px">
+                  <div class="slick-track responsives" style="
+                        opacity: 1;
+                        transform: translate3d(0px, 0px, 0px);
+                      ">
+                    <div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false"
+                      style="width: 378px">
                       <div>
                         <div
                           class="memo-app-slider__inner_list-item md:basis-1/3-gap-4 sm:basis-1/2-gap-4 xs:basis-full"
-                          style="width: 100%; display: inline-block"
-                        >
+                          style="width: 100%; display: inline-block">
                           <div class="memo-app-slider__inner_list-item--img">
-                            <img
-                              decoding="async"
-                              data-src="app/uploads/2024/06/mobile-1.png"
-                              alt="mobile-account"
-                              src="./img/mobile-1.png"
-                              class="ls-is-cached lazyloaded"
-                              style="
-                                --smush-placeholder-width: 340px;
-                                --smush-placeholder-aspect-ratio: 340/630;
-                              "
-                            /><noscript
-                              ><img
-                                decoding="async"
-                                src="./img/mobile-1.png"
-                                alt="mobile-account"
-                            /></noscript>
+                            <img decoding="async" data-src="app/uploads/2024/06/mobile-1.png" alt="mobile-account"
+                              src="./img/mobile-1.png" class="ls-is-cached lazyloaded" style="
+                                  --smush-placeholder-width: 340px;
+                                  --smush-placeholder-aspect-ratio: 340/630;
+                                " /><noscript><img decoding="async" src="./img/mobile-1.png"
+                                alt="mobile-account" /></noscript>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div
-                      class="slick-slide slick-active"
-                      data-slick-index="1"
-                      aria-hidden="false"
-                      style="width: 378px"
-                    >
+                    <div class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 378px">
                       <div>
                         <div
                           class="memo-app-slider__inner_list-item md:basis-1/3-gap-4 sm:basis-1/2-gap-4 xs:basis-full"
-                          style="width: 100%; display: inline-block"
-                        >
+                          style="width: 100%; display: inline-block">
                           <div class="memo-app-slider__inner_list-item--img">
-                            <img
-                              decoding="async"
-                              data-src="app/uploads/2024/06/mobile-2.png"
-                              alt="mobile-transaction"
-                              src="./img/mobile-2.png"
-                              class="ls-is-cached lazyloaded"
-                              style="
-                                --smush-placeholder-width: 340px;
-                                --smush-placeholder-aspect-ratio: 340/630;
-                              "
-                            /><noscript
-                              ><img
-                                decoding="async"
-                                src="./img/mobile-2.png"
-                                alt="mobile-transaction"
-                            /></noscript>
+                            <img decoding="async" data-src="app/uploads/2024/06/mobile-2.png" alt="mobile-transaction"
+                              src="./img/mobile-2.png" class="ls-is-cached lazyloaded" style="
+                                  --smush-placeholder-width: 340px;
+                                  --smush-placeholder-aspect-ratio: 340/630;
+                                " /><noscript><img decoding="async" src="./img/mobile-2.png"
+                                alt="mobile-transaction" /></noscript>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div
-                      class="slick-slide slick-active"
-                      data-slick-index="2"
-                      aria-hidden="false"
-                      style="width: 378px"
-                    >
+                    <div class="slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 378px">
                       <div>
                         <div
                           class="memo-app-slider__inner_list-item md:basis-1/3-gap-4 sm:basis-1/2-gap-4 xs:basis-full"
-                          style="width: 100%; display: inline-block"
-                        >
+                          style="width: 100%; display: inline-block">
                           <div class="memo-app-slider__inner_list-item--img">
-                            <img
-                              decoding="async"
-                              data-src="app/uploads/2024/06/mobile-3.png"
-                              alt="mobile-3"
-                              src="./img/mobile-3.png"
-                              class="ls-is-cached lazyloaded"
-                              style="
-                                --smush-placeholder-width: 340px;
-                                --smush-placeholder-aspect-ratio: 340/630;
-                              "
-                            /><noscript
-                              ><img
-                                decoding="async"
-                                src="./img/mobile-3.png"
-                                alt="mobile-3"
-                            /></noscript>
+                            <img decoding="async" data-src="app/uploads/2024/06/mobile-3.png" alt="mobile-3"
+                              src="./img/mobile-3.png" class="ls-is-cached lazyloaded" style="
+                                  --smush-placeholder-width: 340px;
+                                  --smush-placeholder-aspect-ratio: 340/630;
+                                " /><noscript><img decoding="async" src="./img/mobile-3.png"
+                                alt="mobile-3" /></noscript>
                           </div>
                         </div>
                       </div>
@@ -542,22 +352,76 @@
                 </div>
               </div>
               <div class="memo-app-slider--nav">
-                <div
-                  class="memo-app-slider--nav-item prev slick-arrow slick-hidden"
-                  aria-disabled="true"
-                  tabindex="-1"
-                ></div>
-                <div
-                  class="memo-app-slider--nav-item next slick-arrow slick-hidden"
-                  aria-disabled="true"
-                  tabindex="-1"
-                ></div>
+                <div class="memo-app-slider--nav-item prev slick-arrow slick-hidden" aria-disabled="true" tabindex="-1">
+                </div>
+                <div class="memo-app-slider--nav-item next slick-arrow slick-hidden" aria-disabled="true" tabindex="-1">
+                </div>
               </div>
             </div>
           </div>
         </section>
       </div>
+
+      <!-- Opportunities -->
+      <div class="tota_opportunities">
+        <section class="memo-opportunities memo-opportunities__lang-en">
+          <div class="memo-opportunities__decor memo-opportunities__decor--left"></div>
+          <div class="memo-opportunities__decor memo-opportunities__decor--right"></div>
+          <div class="memo-opportunities__decor memo-opportunities__decor--bg"></div>
+          <div class="memo-opportunities__inner container">
+            <h3 class="memo-opportunities__inner_title" data-aos-anchor-placement="top-center" data-aos-offset="-400">
+              <span class="memo-opportunities__inner_title-text">Opportunities</span>
+            </h3>
+            <h4 class="memo-opportunities__inner_subtitle" data-aos-anchor-placement="top-center"
+              data-aos-offset="-400">
+              <span class="memo-opportunities__inner_subtitle-text">What brings profit to a 1xBet agent?</span>
+            </h4>
+            <div class="memo-opportunities__list-wrap">
+              <div class="card-group">
+                <div class="card rounded-4 memo-opportunities__list_item">
+                  <img src="./img/opportunity-1.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class=" memo-opportunities__list_item-text--name">Stable income thanks to a commission from the bookmaker</h5>
+                    <p class="memo-opportunities__list_item-text--description">The agent's remuneration is 2 - 5% for replenishing a player's account and 2% for withdrawing funds through the agent's cash register. The amount of commission may vary depending on the country.</p>
+                  </div>
+                  <div class="memo-opportunities__list_item--decor"></div>
+                </div>
+                <div class="card rounded-4 memo-opportunities__list_item">
+                  <img src="./img/opportunity-2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="memo-opportunities__list_item-text--name">Opportunity to earn money around the clock</h5>
+                    <p class="memo-opportunities__list_item-text--description">On 1xBet, you can bet 24/7. An agent’s earnings depend only on whether they have a smartphone with the MobCash app and their willingness to help players with transfers promptly.</p>
+                  </div>
+                  <div class="memo-opportunities__list_item--decor"></div>
+                </div>
+                <div class="card rounded-4 memo-opportunities__list_item">
+                  <img src="./img/opportunity-3.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="memo-opportunities__list_item-text--name">You can create your own agent network</h5>
+                    <p class="memo-opportunities__list_item-text--description">Our agents can create their own network and earn money by attracting friends and family to the startup.</p>
+                  </div>
+                  <div class="memo-opportunities__list_item--decor"></div>
+                </div>
+                <div class="card rounded-4 memo-opportunities__list_item">
+                  <img src="./img/opportunity-4.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="memo-opportunities__list_item-text--name">Safe work</h5>
+                    <p class="memo-opportunities__list_item-text--description">Modern personal data protection technologies used by the bookmaker make business safe for both players and agents.</p>
+                  </div>
+                  <div class="memo-opportunities__list_item--decor"></div>
+                </div>
+              </div>
+              <div class="memo-opportunities__list--nav">
+                <div class="memo-opportunities__list--nav-item prev slick-arrow" style=""></div>
+                <div class="memo-opportunities__list--nav-item next slick-arrow" style=""></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
     </div>
+  </div>
   <!-- jQuery (শুধু নতুন ভার্সন রাখুন) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
@@ -571,5 +435,6 @@
   <script src="./js/script.js"></script>
 
 
-  </body>
+</body>
+
 </html>

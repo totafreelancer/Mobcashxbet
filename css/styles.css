@@ -882,6 +882,77 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
+/* Opportunities */
+.memo-opportunities {
+  position: relative;
+}
+.memo-opportunities__decor {
+  position: absolute;
+}
+.memo-opportunities__decor--left {
+  background-image: url(../img/shine_decor_left.1158da4a56a7ed76.png);
+  height: 936px;
+  left: 0;
+  top: 0;
+  transform: translateY(33%);
+  width: 577px;
+}
+.memo-opportunities__inner_title {
+  color: #fff;
+  font-family: Gilroy, sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+.memo-opportunities__inner_subtitle {
+  color: #fff;
+  font-family: Gilroy, sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+.memo-opportunities__list-wrap {
+    position: relative;
+}
+.memo-opportunities__list_item {
+  background-color: #00091e;
+  border-bottom: 5px solid #34b8ff;
+  border-radius: 0 0 6px 6px;
+  margin-bottom: 20px;
+  min-height: 605px;
+  position: relative;
+  margin: 1rem;
+}
+.memo-opportunities__list_item--decor {
+  bottom: 0;
+  box-shadow: 0 -25px 35px rgba(52, 184, 255, .9);
+  height: 3px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+.memo-opportunities__list_item-text--name {
+  color: #fff;
+  font-family: Gilroy, sans-serif;
+  font-size: 1.125em;
+  font-weight: 700;
+  line-height: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.memo-opportunities__list_item-text--description {
+  color: #3881da;
+  font-family: Gilroy, sans-serif;
+  font-size: 1.125em;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+}
+
+
 
 
 
@@ -1307,6 +1378,10 @@ h1, h2, h3, h4, h5, h6 {
   }
   .memo-app-slider__inner_list-item {
     display: block; 
+  }
+  .memo-opportunities__list_item {
+    min-height: 0;
+    min-height: auto;
   }
 }
 @media screen and (min-width: 1024px) and (orientation: landscape) {
